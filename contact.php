@@ -15,7 +15,7 @@
 <h2 style="text-align: center;" id="contact">ContactFormulier</h2>
 <form action="send.php" method="post">
   <div class="form-group">
-    <label id="form" for="name">Naam:</label>
+    <label id="form" for="name">Name:</label>
     <input type="text" id="name" name="naam" required>
   </div>
   <div class="form-group">
@@ -23,15 +23,22 @@
     <input type="email" id="email" name="mail" required>
   </div>
   <div class="form-group">
-    <label id="form" for="telefoon">Telefoonnummer:</label>
+    <label id="form" for="telefoon">Phonenumber:</label>
     <input type="tel" id="telefoon" name="phone">
   </div>
   <div class="form-group">
-    <label id="form" for="onderwerp">Onderwerp:</label>
+    <label id="form" for="datum">Service:</label> <br>
+    <select name="service" id="service">
+      <option value="1">Standard Services</option>
+      <option value="2">Special Occation</option>
+      <option value="3">Group Discount</option>
+    </select>
+  <div class="form-group">
+    <label id="form" for="onderwerp">Title:</label>
     <input type="text" id="onderwerp" name="onderwerp" required>
   </div>
   <div class="form-group">
-    <label id="form" for="bericht">Bericht:</label>
+    <label id="form" for="bericht">Message:</label>
     <textarea name="bericht" id="bericht" cols="30" rows="3" required></textarea>
   </div>
   <input class="btn btn-danger" type="submit" name="submit" value="Verstuur">
